@@ -206,7 +206,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
                         [weakPicker hideProgressHUD];
                     });
                 } else {
-                    [[TZImageManager manager] getVideoOutputPathWithAsset:_asset presetName:AVAssetExportPresetHighestQuality success:^(NSString *outputPath) {
+                    [[TZImageManager manager] getVideoOutputPathWithAsset:_asset presetName:AVAssetExportPresetMediumQuality success:^(NSString *outputPath) {
                         NSLog(@"视频导出成功:%@", outputPath);
                         if (weakSelf.canCallback) {
                             weakSelf.canCallback = NO;
@@ -452,7 +452,7 @@ RCT_EXPORT_METHOD(openVideoPicker:(NSDictionary *)options callback:(RCTResponseS
 
     [assets enumerateObjectsUsingBlock:^(PHAsset * _Nonnull asset, NSUInteger idx, BOOL * _Nonnull stop) {
         if (asset.mediaType == PHAssetMediaTypeVideo) {
-            [[TZImageManager manager] getVideoOutputPathWithAsset:asset presetName:AVAssetExportPresetHighestQuality success:^(NSString *outputPath) {
+            [[TZImageManager manager] getVideoOutputPathWithAsset:asset presetName:AVAssetExportPresetMediumQuality success:^(NSString *outputPath) {
                 [selectedPhotos addObject:[self handleVideoData:outputPath asset:asset coverImage:photos[idx] quality:quality]];
                 if ([selectedPhotos count] == [assets count]) {
                     completion(selectedPhotos);

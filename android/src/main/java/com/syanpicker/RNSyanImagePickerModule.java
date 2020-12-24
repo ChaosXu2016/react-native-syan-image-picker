@@ -352,8 +352,10 @@ public class RNSyanImagePickerModule extends ReactContextBaseJavaModule {
             WritableMap videoMap = new WritableNativeMap();
 
             Boolean isAndroidQ = SdkVersionUtils.checkedAndroid_Q();
-            String filePath = isAndroidQ && media.getAndroidQToPath() != null ? media.getAndroidQToPath() : media.getPath();
-
+            String filePath = media.getPath();
+            if(isAndroidQ) {
+              filePath = media.getAndroidQToPath() != null ? media.getAndroidQToPath() : media.getRealPath();
+            }
             videoMap.putString("uri", "file://" + filePath);
             videoMap.putString("coverUri", "file://" + this.getVideoCover(filePath));
             videoMap.putString("fileName", new File(media.getPath()).getName());

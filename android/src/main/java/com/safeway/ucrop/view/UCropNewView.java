@@ -13,16 +13,16 @@ import com.syanpicker.R;
 import com.safeway.ucrop.callback.CropBoundsChangeListener;
 import com.safeway.ucrop.callback.OverlayViewChangeListener;
 
-public class UCropView extends FrameLayout {
+public class UCropNewView extends FrameLayout {
 
     private GestureCropImageView mGestureCropImageView;
     private final OverlayView mViewOverlay;
 
-    public UCropView(Context context, AttributeSet attrs) {
+    public UCropNewView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public UCropView(Context context, AttributeSet attrs, int defStyleAttr) {
+    public UCropNewView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
         LayoutInflater.from(context).inflate(R.layout.ucrop_view, this, true);

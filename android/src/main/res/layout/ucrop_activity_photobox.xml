@@ -41,7 +41,7 @@
             tools:background="@drawable/ucrop_vector_ic_crop"
             tools:ignore="ContentDescription,MissingPrefix" />
 
-        <com.safeway.ucrop.view.UCropView
+        <com.safeway.ucrop.view.UCropNewView
             android:id="@+id/ucrop"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

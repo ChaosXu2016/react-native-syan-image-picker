@@ -52,7 +52,7 @@ import com.safeway.ucrop.view.CropImageView;
 import com.safeway.ucrop.view.GestureCropImageView;
 import com.safeway.ucrop.view.OverlayView;
 import com.safeway.ucrop.view.TransformImageView;
-import com.safeway.ucrop.view.UCropView;
+import com.safeway.ucrop.view.UCropNewView;
 import com.safeway.ucrop.view.widget.AspectRatioTextView;
 import com.safeway.ucrop.view.widget.HorizontalProgressWheelView;
 
@@ -131,7 +131,7 @@ public class UCropNewActivity extends AppCompatActivity {
     private boolean mShowLoader = true;
 
     protected RelativeLayout uCropPhotoBox;
-    private UCropView mUCropView;
+    private UCropNewView mUCropView;
     private GestureCropImageView mGestureCropImageView;
     private OverlayView mOverlayView;
     private ViewGroup mWrapperStateAspectRatio, mWrapperStateRotate, mWrapperStateScale;

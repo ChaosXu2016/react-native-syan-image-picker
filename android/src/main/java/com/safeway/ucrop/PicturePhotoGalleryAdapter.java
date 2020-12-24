@@ -67,7 +67,7 @@ public class PicturePhotoGalleryAdapter extends RecyclerView.Adapter<PicturePhot
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int position) {
-        View view = mInflater.inflate(R.layout.ucrop_picture_gf_adapter_edit_list,
+        View view = mInflater.inflate(R.layout.new_ucrop_picture_gf_adapter_edit_list,
                 parent, false);
         return new ViewHolder(view);
     }

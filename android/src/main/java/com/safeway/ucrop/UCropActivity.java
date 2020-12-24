@@ -68,7 +68,7 @@ import com.syanpicker.R;
  */
 
 @SuppressWarnings("ConstantConditions")
-public class UCropActivity extends AppCompatActivity {
+public class UCropNewActivity extends AppCompatActivity {
     /**
      * 是否使用沉浸式，子类复写该方法来确定是否采用沉浸式
      *
@@ -105,7 +105,7 @@ public class UCropActivity extends AppCompatActivity {
 
     }
 
-    private static final String TAG = "UCropActivity";
+    private static final String TAG = "UCropNewActivity";
     private static final long CONTROLS_ANIMATION_DURATION = 50;
     private static final int TABS_COUNT = 3;
     private static final int SCALE_WIDGET_SENSITIVITY_COEFFICIENT = 15000;
@@ -326,7 +326,7 @@ public class UCropActivity extends AppCompatActivity {
         }
         mCompressFormat = (compressFormat == null) ? DEFAULT_COMPRESS_FORMAT : compressFormat;
 
-        mCompressQuality = intent.getIntExtra(UCrop.Options.EXTRA_COMPRESSION_QUALITY, UCropActivity.DEFAULT_COMPRESS_QUALITY);
+        mCompressQuality = intent.getIntExtra(UCrop.Options.EXTRA_COMPRESSION_QUALITY, UCropNewActivity.DEFAULT_COMPRESS_QUALITY);
 
         // custom options
         mOverlayView.setDimmedBorderColor(intent.getIntExtra(UCrop.Options.EXTRA_DIMMED_LAYER_BORDER_COLOR, getResources().getColor(R.color.ucrop_color_default_crop_frame)));

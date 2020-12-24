@@ -42,7 +42,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize" />
 
         <activity
-            android:name="com.safeway.ucrop.UCropActivity"
+            android:name="com.safeway.ucrop.UCropNewActivity"
             android:theme="@style/Base.Theme.NoActionBar" />
         <activity
             android:name="com.safeway.ucrop.PictureMultiCuttingActivity"

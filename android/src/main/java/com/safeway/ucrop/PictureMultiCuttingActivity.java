@@ -29,7 +29,7 @@ import com.syanpicker.R;
  * @date：2020-01-08 19:29
  * @describe：多图裁剪
  */
-public class PictureMultiCuttingActivity extends UCropActivity {
+public class PictureMultiCuttingActivity extends UCropNewActivity {
     private final static int MIN_NUM = 1;
     private RecyclerView mRecyclerView;
     private PicturePhotoGalleryAdapter mAdapter;
